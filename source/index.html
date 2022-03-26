@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>Pro Spa</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="page-body">
+      <header class="page-header">
+        <a class="page-header__logo" href="#">
+          <img src="img/svg/Icon Logo.svg" alt="логотип компании" width="97" height="29">
+        </a>
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__button-wrapper">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span>Сауны</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span>Бани</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span>Хаммамы</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span>Бассейны</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span>SPA-комплексы</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span>Камины</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--show-more" href="#">
+                <span>Еще</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__lk lk">
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite_auto.svg#Icons Menu Notification"></use>
+          </svg>
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite_auto.svg#Icons Menu Favourite"></use>
+          </svg>
+          <a class="lk__button button" href="#">Заказать проект</a>
+          <a class="lk__button button" href="#">Войти</a>
+        </div>
+      </header>
+      <main class="page-main">
+        <div class="page-main__bread-crumbs bread-crumbs">
+          <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__item">Строительство</li>
+            <li class="bread-crumbs__item">Сауна</li>
+          </ul>
+        </div>
+        <h1>Строительство саун</h1>
+        <div class="page-main__fast-filter fast-filter">
+          <ul class="fast-filter__list">
+            <li class="fast-filter__item">
+              <button class="fast-filter__button button" type="button">Для квартиры</button>
+              <button class="fast-filter__button button" type="button">Для дачи</button>
+              <button class="fast-filter__button button" type="button">Для бизнеса</button>
+              <button class="fast-filter__button button" type="button">Дизайнерские</button>
+              <button class="fast-filter__button button" type="button">Недорогие</button>
+              <button class="fast-filter__button button" type="button">До 40м</button>
+            </li>
+          </ul>
+        </div>
+        <div class="page-main__sorting sorting">
+          <span class="sorting__indicator">Сначала популярные</span>
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <button class="sorting__button" type="button">Новизна</button>
+              <button class="sorting__button" type="button">Цена</button>
+            </li>
+          </ul>
+        </div>
+        <div class="page-main__goods goods">
+          <ul class="goods-list"></ul>
+        </div>
+        <div class="page-main__filter filter">
+
+        </div>
+      </main>
+    </div>
+
+    <template id="upcoming-cruises-template" style="display: none;">
+      <div class="upcoming-cruises__item cruis-item">
+        <div class="cruis-item__image-wrapper">
+          <picture>
+            <source class="cruis-item__image--mobile-webp" type="image/webp" media="(min-width: 767px)" srcset="img/content/astoria-mobile.webp, img/content/astoria-mobile@2x.webp 2x"> <!--270x386, 540x772-->
+            <source class="cruis-item__image--tablet-webp" type="image/webp" media="(min-width: 1365px)" srcset="img/content/astoria-tablet.webp, img/content/astoria-tablet@2x.webp 2x"> <!--309x386, 618x772-->
+            <source class="cruis-item__image--webp" type="image/webp" srcset="img/content/astoria-desktop.webp, img/content/astoria-desktop@2x.webp 2x"> <!--260x386, 520x772-->
+            <img class="cruis-item__image" src="img/content/astoria-desktop.png" width="260" height="386" alt="Круиз">
+          </picture>
+          <h3 class="cruis-item__header cruis-item__header--main-screen">Круиз “Астория”</h3>
+        </div>
+        <div class="cruis-item__description">
+          <div class="cruis-item__description-wrapper">
+            <h3 class="cruis-item__header cruis-item__header--info-screen">Круиз “Астория”</h3>
+            <div class="cruis-item__par">
+              <span class="cruis-item__par-name">Маршрут</span>
+              <span class="cruis-item__text cruis-item__text--trip">Аргентина - Фолклендские острова - Антарктида - Чили</span>
+            </div>
+            <div class="cruis-item__par">
+              <span class="cruis-item__name">Порт отправления</span>
+              <span class="cruis-item__text cruis-item__text--start">Буэнос-Айрес</span>
+            </div>
+            <div class="cruis-item__par">
+              <span class="cruis-item__name">Продолжительность</span>
+              <span class="cruis-item__text cruis-item__text--duration">20 дней</span>
+            </div>
+            <div class="cruis-item__par">
+              <span class="cruis-item__name">Цена</span>
+              <span class="cruis-item__text cruis-item__text--price">от 14500 $</span>
+            </div>
+          </div>
+          <a href="#" class="cruis-item__button button">Забронировать</a>
+        </div>
+      </div>
+    </template>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

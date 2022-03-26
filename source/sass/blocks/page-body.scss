@@ -1,0 +1,13 @@
+.page-body:not(svg) {
+  font-family: $ff-gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  text-align: center;
+
+  background-color: $basic-background;
+  color: $dark-gray;
+  min-width: 320px;
+}
