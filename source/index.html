@@ -103,7 +103,55 @@
           <span class="filter-tougle__text filter-tougle__text--hide">Скрыть фильтр</span>
         </div>
         <div class="page-main__goods goods">
-          <ul class="goods-list"></ul>
+          <ul class="goods__list"></ul>
+          <button class="goods__show-more-button button">Показать еще</button>
+          <ul class="goods__pages pages">
+            <li class="pages__item">
+              <a href="#">
+                <span>1</span>
+              </a>
+            </li>
+            <li class="pages__item">
+              <a href="#">
+                <span>2</span>
+              </a>
+            </li>
+            <li class="pages__item">
+              <a href="#">
+                <span>3</span>
+              </a>
+            </li>
+            <li class="pages__item">
+              <a href="#">
+                <span>4</span>
+              </a>
+            </li>
+            <li class="pages__item">
+              <a href="#">
+                <span>5</span>
+              </a>
+            </li>
+            <li class="pages__item">
+              <a href="#">
+                <span>6</span>
+              </a>
+            </li>
+            <li class="pages__item pages__item--points">
+              <a href="#">
+                <span>...</span>
+              </a>
+            </li>
+            <li class="pages__item">
+              <a href="#">
+                <span>99</span>
+              </a>
+            </li>
+            <li class="pages__item">
+              <a href="#">
+                <span>100</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="page-main__filter filter">
           <div class="filter__block filter-block">
@@ -111,7 +159,7 @@
               <h2>Компания</h2>
               <span class="filter-block__counter filter-block__counter--company"></span>
               <button class="filter-block__show-button filter-block__show-button--company" type="button">
-                <svg width="24" height="24">
+                <svg width="16" height="16">
                   <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                 </svg>
               </button>
@@ -153,7 +201,7 @@
               <h2>Цена</h2>
               <span class="filter-block__counter filter-block__counter--price"></span>
               <button class="filter-block__show-button filter-block__show-button--company" type="button">
-                <svg width="24" height="24">
+                <svg width="16" height="16">
                   <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                 </svg>
               </button>
@@ -182,7 +230,7 @@
               <h2>объем</h2>
               <span class="filter-block__counter filter-block__counter--price"></span>
               <button class="filter-block__show-button filter-block__show-button--company" type="button">
-                <svg width="24" height="24">
+                <svg width="16" height="16">
                   <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                 </svg>
               </button>
@@ -211,7 +259,7 @@
               <h2>объем парной</h2>
               <span class="filter-block__counter filter-block__counter--price"></span>
               <button class="filter-block__show-button filter-block__show-button--company" type="button">
-                <svg width="24" height="24">
+                <svg width="16" height="16">
                   <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                 </svg>
               </button>
@@ -230,42 +278,81 @@
               </button>
             </header>
           </div>
+          <div class="filter__block filter-block">
+            <header class="filter-block__header">
+              <h2>управление</h2>
+              <span class="filter-block__counter filter-block__counter--price"></span>
+              <button class="filter-block__show-button filter-block__show-button--company" type="button">
+                <svg width="16" height="16">
+                  <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                </svg>
+              </button>
+            </header>
+            <ul class="filter-block__param-list param-list">
+            </ul>
+          </div>
+          <div class="filter__block filter-block">
+            <header class="filter-block__header">
+              <h2>установка</h2>
+              <span class="filter-block__counter filter-block__counter--price"></span>
+              <button class="filter-block__show-button filter-block__show-button--company" type="button">
+                <svg width="16" height="16">
+                  <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                </svg>
+              </button>
+            </header>
+            <ul class="filter-block__param-list param-list">
+            </ul>
+          </div>
+          <button class="filter__clear-button button">Очистить филтр</button>
         </div>
       </main>
     </div>
 
-    <template id="upcoming-cruises-template" style="display: none;">
-      <div class="upcoming-cruises__item cruis-item">
-        <div class="cruis-item__image-wrapper">
+    <template id="goods-template" style="display: none;">
+      <div class="goods__item good-item">
+        <div class="good-item__image-wrapper">
           <picture>
-            <source class="cruis-item__image--mobile-webp" type="image/webp" media="(min-width: 767px)" srcset="img/content/astoria-mobile.webp, img/content/astoria-mobile@2x.webp 2x"> <!--270x386, 540x772-->
-            <source class="cruis-item__image--tablet-webp" type="image/webp" media="(min-width: 1365px)" srcset="img/content/astoria-tablet.webp, img/content/astoria-tablet@2x.webp 2x"> <!--309x386, 618x772-->
-            <source class="cruis-item__image--webp" type="image/webp" srcset="img/content/astoria-desktop.webp, img/content/astoria-desktop@2x.webp 2x"> <!--260x386, 520x772-->
-            <img class="cruis-item__image" src="img/content/astoria-desktop.png" width="260" height="386" alt="Круиз">
+            <source class="good-item__image--webp" type="image/webp" srcset="">
+            <img class="good-item__image" src="" width="260" height="386" alt="фото сауны">
           </picture>
-          <h3 class="cruis-item__header cruis-item__header--main-screen">Круиз “Астория”</h3>
-        </div>
-        <div class="cruis-item__description">
-          <div class="cruis-item__description-wrapper">
-            <h3 class="cruis-item__header cruis-item__header--info-screen">Круиз “Астория”</h3>
-            <div class="cruis-item__par">
-              <span class="cruis-item__par-name">Маршрут</span>
-              <span class="cruis-item__text cruis-item__text--trip">Аргентина - Фолклендские острова - Антарктида - Чили</span>
+          <div class="good-item__feature-wrapper">
+            <div class="good-item__feature good-item__feature--comment feature">
+              <svg width="16" height="16">
+                <use xlink:href="img/sprite_auto.svg#Icon Comment"></use>
+              </svg>
+              <span class="feature__counter feature__counter--comment"></span>
             </div>
-            <div class="cruis-item__par">
-              <span class="cruis-item__name">Порт отправления</span>
-              <span class="cruis-item__text cruis-item__text--start">Буэнос-Айрес</span>
-            </div>
-            <div class="cruis-item__par">
-              <span class="cruis-item__name">Продолжительность</span>
-              <span class="cruis-item__text cruis-item__text--duration">20 дней</span>
-            </div>
-            <div class="cruis-item__par">
-              <span class="cruis-item__name">Цена</span>
-              <span class="cruis-item__text cruis-item__text--price">от 14500 $</span>
+            <div class="good-item__feature good-item__feature--like feature">
+              <svg width="16" height="16">
+                <use xlink:href="img/sprite_auto.svg#Icon Favourite"></use>
+              </svg>
+              <span class="feature__counter feature__counter--like"></span>
             </div>
           </div>
-          <a href="#" class="cruis-item__button button">Забронировать</a>
+          <div class="good-item__new">
+            <span>new</span>
+          </div>
+        </div>
+        <div class="good-item__description">
+          <div class="good-item__parameters">
+            <div>
+              <span class="good-item__type">Сауна</span>
+            </div>
+            <div>
+              <span class="good-item__area">34</span>
+              <span>м<sup>2</sup></span>
+            </div>
+            <div>
+              <span class="good-item__name">EOS</span>
+            </div>
+            <div>
+              <span>от </span>
+              <span class="good-item__price">1 400 000</span>
+            </div>
+          </div>
+          <span class="good-item__location">Москва, квартира</span>
+          <span class="company">Твой пар</span>
         </div>
       </div>
     </template>
