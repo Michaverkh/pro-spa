@@ -73,8 +73,8 @@
 <circle cx="9" cy="10" r="1" fill="#333333"/>
 <circle cx="12" cy="10" r="1" fill="#333333"/>
 </symbol><symbol id="Icons Menu Close" viewBox="0 0 24 24">
-<rect x="5.16016" y="3" width="22.4011" height="3.0547" rx="1" transform="rotate(45 5.16016 3)" fill="#AFB3BB"/>
-<rect width="22.4011" height="3.0547" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.8398 3)" fill="#AFB3BB"/>
+<rect x="5.16016" y="3" width="22.4011" height="3.0547" rx="1" transform="rotate(45 5.16016 3)"/>
+<rect width="22.4011" height="3.0547" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.8398 3)"/>
 </symbol><symbol id="Icons Menu Favourite" viewBox="0 0 24 24">
 <path d="M6.65901 3.79081C7.08097 3.28446 7.65326 3 8.25 3H15.75C16.3467 3 16.919 3.28446 17.341 3.79081C17.7629 4.29716 18 4.98391 18 5.7V20.1C18 20.4371 17.843 20.746 17.5932 20.9002C17.3434 21.0545 17.0427 21.0283 16.8141 20.8324L12 16.706L7.18593 20.8324C6.95732 21.0283 6.65662 21.0545 6.40681 20.9002C6.15701 20.746 6 20.4371 6 20.1V5.7C6 4.98392 6.23705 4.29716 6.65901 3.79081Z" fill="#AFB3BB"/>
 </symbol><symbol id="Icons Menu Gamburger" viewBox="0 0 24 24">

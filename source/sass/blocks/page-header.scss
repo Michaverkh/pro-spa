@@ -1,0 +1,32 @@
+.page-header {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+
+  @include mobile {
+    box-shadow: none;
+    border-bottom: 1px solid $light-gray;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include mobile {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+}
+
+.page-header__logo {
+  width: 97px;
+  height: 19px;
+  margin-right: 64px;
+}
+
+.page-header__nav {
+  margin-right: auto;
+}

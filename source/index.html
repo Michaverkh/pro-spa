@@ -10,63 +10,106 @@
   </head>
   <body>
     <div class="page-body">
-      <header class="page-header">
-        <a class="page-header__logo" href="#">
-          <img src="img/svg/Icon Logo.svg" alt="логотип компании" width="97" height="29">
-        </a>
-        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
-          <div class="main-nav__button-wrapper">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="page-header">
+        <header class="page-header__wrapper centering-container">
+          <a class="page-header__logo" href="#">
+            <img src="img/svg/Icon Logo.svg" alt="логотип компании" width="97" height="29">
+          </a>
+          <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+              <svg class="main-nav__open-button" width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#Icons Menu Gamburger"></use>
+              </svg>
+              <svg class="main-nav__close-button" width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#Icons Menu Close"></use>
+              </svg>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--content">
+                <a class="main-nav__link main-nav__link--active" href="#">
+                  <span>Сауны</span>
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--content">
+                <a class="main-nav__link" href="#">
+                  <span>Бани</span>
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--content">
+                <a class="main-nav__link" href="#">
+                  <span>Хаммамы</span>
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--content">
+                <a class="main-nav__link" href="#">
+                  <span>Бассейны</span>
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--content">
+                <a class="main-nav__link" href="#">
+                  <span>SPA-комплексы</span>
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--content">
+                <a class="main-nav__link" href="#">
+                  <span>Камины</span>
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--show-more" href="#">
+                  <span>
+                    Еще
+                    <span class="main-nav__show-more-mobile-content">разделы</span>
+                  </span>
+                  <svg width="16" height="16" fill="black">
+                    <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-header__lk lk">
+            <a href="#" class="lk__icon lk__icon--notification">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#Icons Menu Notification"></use>
+              </svg>
+              <div class="lk__counter-wrapper active">
+                <span class="lk__counter--notification">2</span>
+              </div>
+            </a>
+            <a href="#" class="lk__icon lk__icon--favourite">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#Icons Menu Favourite"></use>
+              </svg>
+              <div class="lk__counter-wrapper lk__counter-wrapper--notification">
+                <span class="lk__counter--notification">32</span>
+              </div>
+            </a>
+            <a class="lk__button button lk__button--order" href="#">Заказать проект</a>
+            <a class="lk__button button lk__button--sign-in" href="#">Войти</a>
           </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <span>Сауны</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <span>Бани</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <span>Хаммамы</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <span>Бассейны</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <span>SPA-комплексы</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <span>Камины</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--show-more" href="#">
-                <span>Еще</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__lk lk">
-          <svg width="24" height="24">
-            <use xlink:href="img/sprite_auto.svg#Icons Menu Notification"></use>
-          </svg>
-          <svg width="24" height="24">
-            <use xlink:href="img/sprite_auto.svg#Icons Menu Favourite"></use>
-          </svg>
-          <a class="lk__button button" href="#">Заказать проект</a>
-          <a class="lk__button button" href="#">Войти</a>
-        </div>
-      </header>
+        </header>
+      </div>
+
       <main class="page-main">
         <div class="page-main__bread-crumbs bread-crumbs">
           <ul class="bread-crumbs__list">
@@ -87,20 +130,22 @@
             </li>
           </ul>
         </div>
-        <div class="page-main__sorting sorting">
-          <span class="sorting__indicator">Сначала популярные</span>
-          <ul class="sorting__list">
-            <li class="sorting__item">
-              <button class="sorting__button" type="button">Новизна</button>
-              <button class="sorting__button" type="button">Цена</button>
-            </li>
-          </ul>
-        </div>
-        <div class="page-main__filter-tougle filter-tougle">
-          <svg class="filter-tougle__icon" width="16" height="16">
-            <use xlink:href="img/sprite_auto.svg#Icon Filter"></use>
-          </svg>
-          <span class="filter-tougle__text filter-tougle__text--hide">Скрыть фильтр</span>
+        <div class="page-main__sorting-wrapper">
+          <div class="page-main__sorting sorting">
+            <span class="sorting__indicator">Сначала популярные</span>
+            <ul class="sorting__list">
+              <li class="sorting__item">
+                <button class="sorting__button" type="button">Новизна</button>
+                <button class="sorting__button" type="button">Цена</button>
+              </li>
+            </ul>
+          </div>
+          <div class="page-main__filter-tougle filter-tougle">
+            <svg class="filter-tougle__icon" width="16" height="16">
+              <use xlink:href="img/sprite_auto.svg#Icon Filter"></use>
+            </svg>
+            <span class="filter-tougle__text filter-tougle__text--hide">Скрыть фильтр</span>
+          </div>
         </div>
         <div class="page-main__goods goods">
           <ul class="goods__list"></ul>
@@ -346,13 +391,9 @@
             <div>
               <span class="good-item__name">EOS</span>
             </div>
-            <div>
-              <span>от </span>
-              <span class="good-item__price">1 400 000</span>
-            </div>
           </div>
           <span class="good-item__location">Москва, квартира</span>
-          <span class="company">Твой пар</span>
+          <span class="good-item__company">Твой пар</span>
         </div>
       </div>
     </template>

@@ -44,7 +44,10 @@ export const renderGoods = (data) => {
         goodElement.querySelector('.good-item__type').textContent = good.type;
         goodElement.querySelector('.good-item__image').src = good.img;
         goodElement.querySelector('.good-item__image--webp').srcset = good.imgWebp;
-
+        goodElement.querySelector('.good-item__name').textContent = good.name;
+        goodElement.querySelector('.good-item__area').textContent = good.area;
+        goodElement.querySelector('.good-item__location').textContent = good.location;
+        goodElement.querySelector('.good-item__company').textContent = good.company;
         goodListContainer.appendChild(goodElement);
     })
 }

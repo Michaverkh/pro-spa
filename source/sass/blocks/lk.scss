@@ -1,0 +1,109 @@
+.lk {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include mobile {
+    margin-right: 50px;
+  }
+}
+
+.lk__button {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-left: 24px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.lk__button--order {
+  color: $main-blue;
+  border: 1px solid $main-blue;
+
+  &:hover {
+    color: $color-default-white;
+    background-color: $main-blue;
+  }
+}
+
+.lk__button--sign-in {
+  border: 1px solid $light-gray;
+
+  &:hover {
+    color: $main-blue;
+    border: 1px solid $light-blue;
+  }
+}
+
+.lk__icon {
+  @include indent-reset;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &::before {
+    display: none;
+    position: absolute;
+    content: "Избранное";
+    padding: 5px 16px  7px 16px;
+    background-color: $dark-gray;
+    color: $color-default-white;
+    right: -40px;
+    bottom: -45px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+}
+
+.lk__icon:hover {
+  &::before {
+    display: block;
+  }
+}
+
+.lk__icon--favourite {
+  margin-left: 24px;
+
+  &::before {
+    content: "Избранное";
+  }
+}
+
+.lk__icon--notification {
+  &::before {
+    content: "Уведомления";
+  }
+}
+
+.lk__counter-wrapper {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  top: -5px;
+  right: -7px;
+  padding: 3px 5px 7px 5px;
+  border-radius: 10px;
+  height: 19px;
+  background-color: $special-red;
+  border: 2px solid $color-default-white;
+
+  & span {
+    display: block;
+    font-size: 11px;
+    line-height: 8px;
+    color: $color-default-white;
+  }
+}
+
+.lk__counter-wrapper.active {
+  display: block;
+}
+
+.lk__counter-wrapper.lk__counter-wrapper--notification {
+  right: -15px;
+}

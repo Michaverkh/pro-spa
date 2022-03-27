@@ -2,18 +2,11 @@
   display: block;
   box-sizing: border-box;
   font-family: $ff-gilroy;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 2px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
-  color: $dark-gray;
-  background-color: $button-background;
-  padding: 19px 0;
+  padding: 8px 16px;
   border: none;
+  border-radius: 10px;
   outline: none;
 
   // &:hover {
