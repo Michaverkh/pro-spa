@@ -1,0 +1,54 @@
+.fast-filter {
+  width: 1792px;
+  margin: 0 auto 43px auto;
+
+  @include vp-1919 {
+    width: 1312px;
+  }
+
+  @include vp-1439 {
+    width: 1152px;
+  }
+
+  @include vp-1279 {
+    width: 960px;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 0;
+  }
+}
+
+.fast-filter__list {
+  @include indent-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include mobile {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+  }
+}
+
+.fast-filter__list::-webkit-scrollbar {
+  @include mobile {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+}
+
+.fast-filter__item {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.fast-filter__item:not(:last-child) {
+  margin-right: 8px;
+}

@@ -27,7 +27,7 @@
             </button>
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--content">
-                <a class="main-nav__link main-nav__link--active" href="#">
+                <a class="main-nav__link" href="#">
                   <span>Сауны</span>
                   <svg width="16" height="16">
                     <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
@@ -111,32 +111,54 @@
       </div>
 
       <main class="page-main">
-        <div class="page-main__bread-crumbs bread-crumbs">
+        <div class="page-main__bread-crumbs bread-crumbs centering-container">
           <ul class="bread-crumbs__list">
             <li class="bread-crumbs__item">Строительство</li>
             <li class="bread-crumbs__item">Сауна</li>
           </ul>
         </div>
-        <h1>Строительство саун</h1>
+        <div class="centering-container">
+          <h1>Строительство саун</h1>
+        </div>
         <div class="page-main__fast-filter fast-filter">
           <ul class="fast-filter__list">
             <li class="fast-filter__item">
               <button class="fast-filter__button button" type="button">Для квартиры</button>
+            </li>
+            <li class="fast-filter__item">
               <button class="fast-filter__button button" type="button">Для дачи</button>
+            </li>
+            <li class="fast-filter__item">
               <button class="fast-filter__button button" type="button">Для бизнеса</button>
+            </li>
+            <li class="fast-filter__item">
               <button class="fast-filter__button button" type="button">Дизайнерские</button>
+            </li>
+            <li class="fast-filter__item">
               <button class="fast-filter__button button" type="button">Недорогие</button>
+            </li>
+            <li class="fast-filter__item">
               <button class="fast-filter__button button" type="button">До 40м</button>
             </li>
           </ul>
         </div>
-        <div class="page-main__sorting-wrapper">
+        <div class="page-main__sorting-wrapper centering-container">
           <div class="page-main__sorting sorting">
+            <button class="sorting__tougle" type="button">
+              <svg class="filter-tougle__icon" width="16" height="16">
+                <use xlink:href="img/sprite_auto.svg#Icon Sort"></use>
+              </svg>
+            </button>
             <span class="sorting__indicator">Сначала популярные</span>
-            <ul class="sorting__list">
+            <ul class="sorting__list sorting__list--closed">
               <li class="sorting__item">
-                <button class="sorting__button" type="button">Новизна</button>
-                <button class="sorting__button" type="button">Цена</button>
+                <button class="sorting__button sorting__button--param" type="button">Новизна</button>
+              </li>
+              <li class="sorting__item">
+                <button class="sorting__button sorting__button--param" type="button">Цена</button>
+              </li>
+              <li class="sorting__item">
+                <button class="sorting__button sorting__button--param" type="button">Популярность</button>
               </li>
             </ul>
           </div>

@@ -1,0 +1,18 @@
+.page-main h1 {
+  @include indent-reset;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 24px;
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+}
+
+.page-main__sorting-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

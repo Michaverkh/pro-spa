@@ -1,0 +1,18 @@
+.bread-crumbs__list {
+  @include indent-reset;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 51px 0 13px 0;
+
+  @include mobile {
+    font-size: 12px;
+    padding: 28px 0 4px 0;
+  }
+}
+
+.bread-crumbs__item:not(:last-child) {
+  margin-right: 16px;
+}

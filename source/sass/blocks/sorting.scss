@@ -1,0 +1,68 @@
+.sorting {
+  position: relative;
+  display: flex;
+  align-items: center
+}
+
+.sorting__list {
+  @include indent-reset;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+
+
+}
+
+.sorting__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.sorting__indicator {
+  color: $main-blue;
+  margin-right: 25px;
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 32px;
+    color: $dark-gray
+  }
+}
+
+.sorting__button {
+  @include indent-reset;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sorting__tougle {
+  @include indent-reset;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+
+  @include mobile {
+    display: block;
+    margin-right: 5px;
+  }
+}
+
+@include mobile {
+  .sorting__list.sorting__list--closed {
+    display: none;
+  }
+
+  .sorting__list.sorting__list--opened {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    padding: 24px 24px 24px 24px;
+    border-radius: 10px;
+    background-color: $color-default-white;
+  }
+}
