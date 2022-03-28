@@ -1,0 +1,32 @@
+.param-list {
+  @include indent-reset;
+}
+
+.param-list__item:not(:last-child) {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.param-list__item label {
+  padding-left: 32px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+  }
+}
+
+.param-list__item input:checked + .param-list__item label::before {
+  background-color: $main-blue;
+}

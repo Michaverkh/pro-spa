@@ -1,0 +1,12 @@
+.filter {
+  box-sizing: border-box;
+  padding: 48px 0 48px 64px;
+  min-width: 240px;
+}
+
+
+@include vp-1439 {
+  .filter {
+    display: none;
+  }
+}

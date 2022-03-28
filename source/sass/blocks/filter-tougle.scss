@@ -1,0 +1,47 @@
+.filter-tougle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.filter-tougle__text--open {
+  color: $main-blue;
+}
+
+.filter-tougle__text--hide,
+.filter-tougle__text--mobile {
+  display: none;
+}
+
+.filter-tougle__icon {
+  margin-right: 9px;
+  stroke: $main-blue;
+}
+
+@include vp-1439 {
+  .filter-tougle__text--open {
+    display: none;
+  }
+
+  .filter-tougle__text--hide {
+    display: block;
+  }
+
+  .filter-tougle__icon {
+    stroke: $dark-gray;
+  }
+}
+
+@include mobile {
+  .filter-tougle__text--hide,
+  .filter-tougle__text--open {
+    display: none;
+  }
+
+  .filter-tougle__text--mobile {
+    display: block;
+  }
+}

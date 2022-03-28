@@ -1,0 +1,25 @@
+.filter-block__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.filter-block__counter {
+  margin-right: auto;
+  color: $light-gray;
+}
+
+.filter-block__header h2 {
+  @include indent-reset;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-right: 9px;
+  text-transform: uppercase;
+}
+
+.filter-block__show-button {
+  border: none;
+  background-color: transparent;
+}

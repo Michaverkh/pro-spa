@@ -16,3 +16,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.page-main__goods-and-filter-wrapper {
+  display: grid;
+  grid-template-columns: auto min-content;
+}
