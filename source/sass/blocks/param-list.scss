@@ -2,12 +2,24 @@
   @include indent-reset;
 }
 
-.param-list__item:not(:last-child) {
+.param-list--companies {
+  height: 195px;
+  white-space: nowrap;
+  overflow-y: scroll;
+}
+
+.param-list__item {
+  box-sizing: border-box;
   position: relative;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  margin-bottom: 16px;
+  padding: 8px 0;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $link-background;
+  }
 }
 
 .param-list__item label {
@@ -27,6 +39,9 @@
   }
 }
 
-.param-list__item input:checked + .param-list__item label::before {
+.param-list__item input:checked + label::before {
+  background: url("../img/sprite/Icon Check Filter.svg") center no-repeat;
   background-color: $main-blue;
+  background-size: 10px 10px;
+  border: 1px solid $main-blue;
 }

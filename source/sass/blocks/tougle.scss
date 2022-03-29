@@ -1,0 +1,32 @@
+.tougle {
+  @include indent-reset;
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+.tougle__wrapper {
+  box-sizing: border-box;
+  background-color: $light-gray;
+  width: 42px;
+  height: 24px;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.tougle__lever {
+  width: 18px;
+  height: 18px;
+  margin-right: auto;
+  background-color: $color-default-white;
+  border-radius: 50%;
+}
+
+.tougle.active .tougle__lever{
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.tougle.active .tougle__wrapper{
+  background-color: $main-blue;
+}

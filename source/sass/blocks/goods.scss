@@ -1,0 +1,21 @@
+.goods {
+
+}
+
+.goods__list {
+  @include indent-reset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 41px;
+  column-gap: 16px;
+  padding: 21px 0 41px 0;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.goods__show-more-button {
+  width: 100%;
+  cursor: pointer;
+}

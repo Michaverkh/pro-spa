@@ -1,7 +1,6 @@
 .filter {
   box-sizing: border-box;
-  padding: 48px 0 48px 64px;
-  min-width: 240px;
+  padding: 48px 0 48px 0;
 }
 
 
@@ -9,4 +8,12 @@
   .filter {
     display: none;
   }
+}
+
+.filter__clear-button {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
 }

@@ -19,5 +19,6 @@
 
 .page-main__goods-and-filter-wrapper {
   display: grid;
-  grid-template-columns: auto min-content;
+  grid-template-columns: auto 240px;
+  column-gap: 64px;
 }
