@@ -1463,9 +1463,9 @@ const swiper = () => {
     };
 
     extendParams({
-      observer: false,
-      observeParents: false,
-      observeSlideChildren: false
+      observer: true,
+      observeParents: true,
+      observeSlideChildren: true
     });
     on('init', init);
     on('destroy', destroy);

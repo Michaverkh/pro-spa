@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {openMenu} from './modules/main-nav';
 import {goodList, renderGoods, removeGoods} from './modules/goods';
-import './vendor/swiper';
+import './modules/slider';
 // ---------------------------------
 
 // renderGoods(goodList);

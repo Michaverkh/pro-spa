@@ -1778,13 +1778,12 @@ button,
 }
 
 .page-main__goods-and-filter-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 240px;
-  grid-template-columns: auto 240px;
-  -webkit-column-gap: 64px;
-  -moz-column-gap: 64px;
-  column-gap: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .bread-crumbs__list {
@@ -2127,12 +2126,9 @@ button,
   background-color: #2168de;
 }
 
-.good-item {
-  width: auto;
-}
-
 .good-item__image-wrapper {
   position: relative;
+  width: 360px;
 }
 
 .good-item__image-wrapper img {
@@ -2180,9 +2176,13 @@ button,
   line-height: 16px;
   text-transform: uppercase;
   color: white;
+  z-index: 4;
 }
 
 .good-item__parameters {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2195,16 +2195,16 @@ button,
 
 .good-item__parameters div:not(:last-child) {
   margin-right: 15px;
-  position: relative;
 }
 
 .good-item__parameters div {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
+  position: relative;
 }
 
-.good-item__parameters div::before {
+.good-item__parameters div:not(:last-child)::before {
   position: absolute;
   content: "";
   width: 4px;
@@ -2227,7 +2227,7 @@ button,
   display: none;
 }
 
-.feature.feature--visible {
+.feature--visible.feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2238,6 +2238,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   margin-left: 8px;
+  z-index: 4;
 }
 
 .feature svg {

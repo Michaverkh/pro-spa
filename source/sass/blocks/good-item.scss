@@ -1,10 +1,8 @@
-.good-item {
-  width: auto;
 
-}
 
 .good-item__image-wrapper {
   position: relative;
+  width: 360px;
 }
 
 .good-item__image-wrapper img {
@@ -44,9 +42,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-default-white;
+  z-index: 4;
 }
 
 .good-item__parameters {
+  box-sizing: border-box;
+  width: auto;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -54,7 +55,7 @@
 
 .good-item__parameters div:not(:last-child) {
   margin-right: 15px;
-  position: relative;
+
 
 
 }
@@ -63,10 +64,10 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-
+  position: relative;
 }
 
-.good-item__parameters div::before {
+.good-item__parameters div:not(:last-child)::before {
   position: absolute;
   content: "";
   width: 4px;

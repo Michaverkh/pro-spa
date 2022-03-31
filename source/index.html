@@ -173,7 +173,8 @@
         </div>
         <div class="page-main__goods-and-filter-wrapper centering-container">
           <div class="page-main__goods goods">
-            <ul class="goods__list"></ul>
+            <ul class="goods__list">
+            </ul>
             <button class="goods__show-more-button button">Показать еще</button>
             <ul class="goods__pages pages">
               <li class="pages__item">
@@ -378,20 +379,35 @@
           </div>
         </div>
       </main>
+      <div class="test__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>слайд1</p>
+          </div>
+          <div class="swiper-slide">
+            <p>слайд2</p>
+          </div>
+          <div class="swiper-slide">
+            <p>слайд3</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
 
     <template id="goods-template" style="display: none;">
       <div class="goods__item good-item">
         <div class="good-item__image-wrapper">
           <div class="good-item__slider swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+            <div class="good-item__list swiper-wrapper">
+              <div class="good-item__photo swiper-slide">
                 <picture>
                   <source class="good-item__image--webp" type="image/webp" srcset="">
                   <img class="good-item__image" src="" width="260" height="386" alt="фото сауны">
                 </picture>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
           <div class="good-item__feature-wrapper">
             <div class="good-item__feature good-item__feature--comment feature">
