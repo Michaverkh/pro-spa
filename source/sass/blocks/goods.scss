@@ -1,6 +1,6 @@
-.goods {
+// .goods {
 
-}
+// }
 
 .goods__list {
   @include indent-reset;
@@ -18,4 +18,9 @@
 .goods__show-more-button {
   width: 100%;
   cursor: pointer;
+
+  &:hover {
+    background-color: $special-gray;
+    color: $main-blue;
+  }
 }

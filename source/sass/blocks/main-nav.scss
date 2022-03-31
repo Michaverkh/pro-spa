@@ -21,6 +21,10 @@
   &:hover {
     color: $main-blue;
   }
+
+  & svg {
+    stroke: $light-gray;
+  }
 }
 
 .main-nav__link--show-more {
@@ -31,11 +35,9 @@
   & span {
     margin-right: 4px;
   }
-
-  & svg {
-    stroke: $light-gray;
-  }
 }
+
+
 
 .main-nav__item:not(:last-child) {
   margin-right: 32px;
@@ -145,12 +147,13 @@
 
   .main-nav__list {
     display: block;
+    position: relative;
     box-sizing: border-box;
     padding: 40px 0 40px 0;
     width: 100%;
     list-style: none;
     background-color: $color-default-white;
-    z-index: 2;
+    z-index: 4;
   }
 
   .main-nav__link {

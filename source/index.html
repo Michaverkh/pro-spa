@@ -29,7 +29,7 @@
               <li class="main-nav__item main-nav__item--content">
                 <a class="main-nav__link" href="#">
                   <span>Сауны</span>
-                  <svg width="16" height="16">
+                  <svg width="16" height="16" stroke="#000000">
                     <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                   </svg>
                 </a>
@@ -37,7 +37,7 @@
               <li class="main-nav__item main-nav__item--content">
                 <a class="main-nav__link" href="#">
                   <span>Бани</span>
-                  <svg width="16" height="16">
+                  <svg width="16" height="16" stroke="#000000">
                     <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                   </svg>
                 </a>
@@ -45,7 +45,7 @@
               <li class="main-nav__item main-nav__item--content">
                 <a class="main-nav__link" href="#">
                   <span>Хаммамы</span>
-                  <svg width="16" height="16">
+                  <svg width="16" height="16" stroke="#000000">
                     <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                   </svg>
                 </a>
@@ -53,7 +53,7 @@
               <li class="main-nav__item main-nav__item--content">
                 <a class="main-nav__link" href="#">
                   <span>Бассейны</span>
-                  <svg width="16" height="16">
+                  <svg width="16" height="16" stroke="#000000">
                     <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                   </svg>
                 </a>
@@ -61,7 +61,7 @@
               <li class="main-nav__item main-nav__item--content">
                 <a class="main-nav__link" href="#">
                   <span>SPA-комплексы</span>
-                  <svg width="16" height="16">
+                  <svg width="16" height="16" stroke="#000000">
                     <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                   </svg>
                 </a>
@@ -69,7 +69,7 @@
               <li class="main-nav__item main-nav__item--content">
                 <a class="main-nav__link" href="#">
                   <span>Камины</span>
-                  <svg width="16" height="16">
+                  <svg width="16" height="16" stroke="#000000">
                     <use xlink:href="img/sprite_auto.svg#Icon Select"></use>
                   </svg>
                 </a>
@@ -152,13 +152,13 @@
             <span class="sorting__indicator">Сначала популярные</span>
             <ul class="sorting__list sorting__list--opened">
               <li class="sorting__item">
-                <button class="sorting__button sorting__button--param" type="button">Новизна</button>
+                <button class="sorting__button sorting__button--new" type="button">Новизна</button>
               </li>
               <li class="sorting__item">
-                <button class="sorting__button sorting__button--param" type="button">Цена</button>
+                <button class="sorting__button sorting__button--price" type="button">Цена</button>
               </li>
               <li class="sorting__item">
-                <button class="sorting__button sorting__button--param active" type="button">Популярность</button>
+                <button class="sorting__button sorting__button--popular active" type="button">Популярность</button>
               </li>
             </ul>
           </div>
@@ -383,10 +383,16 @@
     <template id="goods-template" style="display: none;">
       <div class="goods__item good-item">
         <div class="good-item__image-wrapper">
-          <picture>
-            <source class="good-item__image--webp" type="image/webp" srcset="">
-            <img class="good-item__image" src="" width="260" height="386" alt="фото сауны">
-          </picture>
+          <div class="good-item__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source class="good-item__image--webp" type="image/webp" srcset="">
+                  <img class="good-item__image" src="" width="260" height="386" alt="фото сауны">
+                </picture>
+              </div>
+            </div>
+          </div>
           <div class="good-item__feature-wrapper">
             <div class="good-item__feature good-item__feature--comment feature">
               <svg width="16" height="16" fill="#FFFFF">

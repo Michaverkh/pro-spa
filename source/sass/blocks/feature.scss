@@ -1,4 +1,8 @@
 .feature {
+  display: none;
+}
+
+.feature.feature--visible {
   display: flex;
   justify-content: flex-start;
   align-items: center;
