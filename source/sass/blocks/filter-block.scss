@@ -25,6 +25,14 @@
 .filter-block__show-button {
   border: none;
   background-color: transparent;
+
+  & svg {
+    stroke: $dark-gray;
+  }
+}
+
+.filter-block__show-button.filter-block__show-button--closed svg {
+  transform: rotate(180deg);
 }
 
 .filter-block__search {

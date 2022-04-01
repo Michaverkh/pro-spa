@@ -61,15 +61,16 @@
     display: none;
   }
 
-  .sorting__list.sorting__list--opened {
+  .sorting__list {
     display: block;
     min-width: 232px;
     position: absolute;
-    top: 40px;
+    top: 80px;
     left: 40px;
-    padding: 21px 0;
+    padding: 21px;
     border-radius: 10px;
     background-color: $color-default-white;
+    z-index: 11;
   }
 
   .sorting__list--opened .sorting__button {

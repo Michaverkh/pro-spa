@@ -1,4 +1,4 @@
-.filter-tougle {
+.filter-toggle {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -7,41 +7,59 @@
   cursor: pointer;
 }
 
-.filter-tougle__text--open {
+.filter-toggle__text--opened {
+  display: block;
   color: $main-blue;
+
+  @include mobile {
+    display: none;
+  }
 }
 
-.filter-tougle__text--hide,
-.filter-tougle__text--mobile {
+.filter-toggle__text--closed {
   display: none;
 }
 
-.filter-tougle__icon {
-  margin-right: 9px;
-  stroke: $main-blue;
-}
+.filter-toggle--hiden .filter-toggle__text--closed {
+  display: block;
 
-@include vp-1439 {
-  .filter-tougle__text--open {
+  @include mobile {
     display: none;
   }
+}
 
-  .filter-tougle__text--hide {
-    display: block;
-  }
+.filter-toggle--hiden .filter-toggle__text--opened {
+  display: none;
+}
 
-  .filter-tougle__icon {
+.filter-toggle__icon {
+  stroke: $main-blue;
+  margin-right: 9px;
+
+  @include mobile {
     stroke: $dark-gray;
   }
 }
 
+.filter-toggle--hiden .filter-toggle__icon {
+  stroke: $dark-gray;
+
+  @include mobile {
+    stroke: $dark-gray;
+  }
+}
+
+.filter-toggle__text--mobile {
+  display: none;
+}
+
 @include mobile {
-  .filter-tougle__text--hide,
-  .filter-tougle__text--open {
+  .filter-toggle__text--hide,
+  .filter-toggle__text--open {
     display: none;
   }
 
-  .filter-tougle__text--mobile {
+  .filter-toggle__text--mobile {
     display: block;
   }
 }

@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {openMenu} from './modules/main-nav';
 import {goodList, renderGoods, removeGoods} from './modules/goods';
 import './modules/slider';
+import './modules/filter'
 // ---------------------------------
 
 // renderGoods(goodList);
@@ -59,7 +60,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   openMenu();
-
   // Modules
   // ---------------------------------
 

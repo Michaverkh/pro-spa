@@ -1,8 +1,10 @@
-
+.good-item {
+  display: block;
+  width: 100%;
+}
 
 .good-item__image-wrapper {
   position: relative;
-  width: 360px;
 }
 
 .good-item__image-wrapper img {
@@ -42,7 +44,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-default-white;
-  z-index: 4;
+  z-index: 3;
 }
 
 .good-item__parameters {
@@ -82,4 +84,28 @@
 .good-item__location,
 .good-item__company {
   display: block;
+}
+
+.good-item__slider {
+  width: 100%;
+  position: relative;
+}
+
+.good-item__slider .swiper-pagination {
+  width: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-default-white;
+}
+
+.swiper-slide {
+  width: 100% !important;
 }

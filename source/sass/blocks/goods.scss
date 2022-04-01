@@ -1,9 +1,10 @@
-// .goods {
-
-// }
+.goods {
+  width: 100%;
+}
 
 .goods__list {
   @include indent-reset;
+  // max-width: 1488px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 41px;
@@ -22,5 +23,11 @@
   &:hover {
     background-color: $special-gray;
     color: $main-blue;
+  }
+}
+
+.goods__item:not(:last-child) {
+  @include mobile {
+    margin-bottom: 25px;
   }
 }

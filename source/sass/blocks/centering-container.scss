@@ -20,3 +20,25 @@
     padding-right: 16px;
   }
 }
+
+.centering-container--goods-and-filter {
+  width: 1792px;
+  margin: 0 auto;
+
+  @include vp-1919 {
+    width: 1312px;
+  }
+
+  @include vp-1439 {
+    width: 1152px;
+  }
+
+  @include vp-1279 {
+    width: 960px;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding: 0;
+  }
+}

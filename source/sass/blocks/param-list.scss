@@ -2,6 +2,11 @@
   @include indent-reset;
 }
 
+.param-list.param-list--closed {
+  height: 0;
+  overflow: hidden;
+}
+
 .param-list--companies {
   height: 195px;
   white-space: nowrap;
